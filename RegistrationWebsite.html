@@ -1,11 +1,111 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration-Website</title>
+    <title>Sneaker Convention Registration</title>
 </head>
-<body>
-    
+
+<body bgcolor="black" text="white">
+
+<header>
+    <h1>Sneaker Convention 2026</h1>
+    <p>Discover Fresh Kicks, Meet Sneakerheads, and Show Off Your Style!</p>
+</header>
+
+<nav>
+    <a href="#about">About</a> |
+    <a href="#register">Register</a>
+</nav>
+
+<main>
+
+    <section id="about">
+        <h2>About the Event</h2>
+
+        <p>
+            Join us for Sneaker Convention 2026! Explore popular sneaker
+            brands, check out exclusive styles, and meet other sneaker fans.
+        </p>
+
+        <img src="images/jordan5.png"
+             alt="Sneakers">
+
+        <p><strong>Date:</strong> November 14, 2026</p>
+        <p><strong>Time:</strong> 10:00 AM - 3:00 PM</p>
+        <p><strong>Location:</strong>OCVTS</p>
+        <p><strong>Admission:</strong> Free</p>
+    </section>
+
+    <section id="register">
+        <h2>Register for the Event</h2>
+
+        <form>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" style="background-color: lightgray;">
+            <br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" style="background-color: lightgray;" >
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" style="background-color: lightgray;">
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" style="background-color: lightgray;">
+            <br><br>
+
+
+            <label for="admission">Admission Type:</label>
+<select id="admission" name="admission">
+    <option value="General">General Admission - $10</option>
+    <option value="VIP">VIP Admission - $25</option>
+</select>
+
+<p><strong>General Admission:</strong> Access to the main convention area and sneaker displays.</p>
+
+<p><strong>VIP Admission:</strong> Includes General Admission plus early entry, VIP seating, and access to exclusive sneaker displays.</p>
+
+            <br><br>
+
+            <p>How are you attending?</p>
+
+            <input type="radio" id="individual" name="attendance" value="Individual">
+            <label for="individual">Individual</label>
+
+            <input type="radio" id="group" name="attendance" value="Group">
+            <label for="group">Group</label>
+
+            <br><br>
+
+            <input type="checkbox" id="updates" name="updates">
+            <label for="updates">Send me updates about the event</label>
+
+            <br><br>
+
+            <label for="message">What are you most excited to see?</label>
+            <br>
+            <textarea id="message" name="message" rows="5" cols="40" style="background-color: lightgray;"></textarea>
+
+            <br><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p><small>Sneaker Convention 2026 | All Rights Reserved</small></p>
+</footer>
+
 </body>
+
 </html>
+```
